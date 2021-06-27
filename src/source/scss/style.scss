@@ -4,15 +4,143 @@
 /* Code navigation */
 
 /* -------------------------------------------------------------------- */
-
+/* 1. Header */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
 
-$maxWidth: ( 1600 );
+$maxWidth: ( 1270 );
 
 /* START */
 
-div {
-    color:  red;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #faf9f9;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1175px;
+    margin: 0 auto;
+}
+
+/* 1. Header */
+
+.header {
+    width: 100%;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+
+    &__logo {
+
+        h2 {
+            font-family: 'Rajdhani', sans-serif;
+            @include adaptive-font(30, 23);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        span {
+            color: #FF2E63;
+        }
+    }
+
+    &__intro {
+        display: flex;
+        justify-content: space-between;
+            
+        &-block {
+            
+            h1 {
+                font-family: 'Rajdhani', sans-serif;
+                @include adaptive-font(50, 30);
+                line-height: 60px;
+                font-weight: 700;
+            }
+            
+            span {
+                color: #FF2E63;
+            }
+            
+            .header__intro-btn {
+                @include adaptive-font(16, 12);
+                display: inline-block;
+                margin: 50px 0 0 0;
+                padding: 8px 20px 10px 21px;
+                font-weight: 600;
+                color: #faf9f9;
+                border-radius: 5px;
+                background: #346CD9;
+            }
+    
+            .bg-circle {
+                position: relative;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                background: linear-gradient(131.47deg, rgba(52, 108, 217, 0) 13.96%, rgba(52, 108, 217, 0.25) 85.97%);
+    
+                .intro__car {
+                    position: absolute;
+                    top: 0;
+                    right: -20%;
+                    margin: 74px 0 0 0;
+                }
+            }
+        }
+    }
+
+    .text {
+        padding: 121px 0 0 0;
+    }
+
+    .car {
+        padding: 26px 0 0 0;
+    }
+    
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+        &__links {
+            @include adaptive-font(14, 10);
+            padding: 0 30px 0 0;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            transition: .4s;
+    
+            &:hover {
+                color: #FF2E63;
+            }
+        }
+    }
+    
+    .authorization {
+        display: flex;
+        align-items: center;
+
+        .login {
+            @include adaptive-font(16, 13);
+            margin: 0 30px 0 0;
+            font-weight: 600;
+            color: #FF2E63;
+        }
+
+        .register {
+            @include adaptive-font(16, 13);
+            font-weight: 600;
+            padding: 8px 23px 10px 23px;
+            color: #faf9f9;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: #FF2E63;
+        }
+    }
 }

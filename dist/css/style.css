@@ -92,12 +92,156 @@ h6 {
 
 /* -------------------------------------------------------------------- */
 
+/* 1. Header */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
 
 /* START */
 
-div {
-  color: red;
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #faf9f9;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+/* 1. Header */
+
+.header {
+  width: 100%;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0 0 0;
+}
+
+.header__logo h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: calc(23px + 7 * ((100vw - 320px) / 950));
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.header__logo span {
+  color: #FF2E63;
+}
+
+.header__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__intro-block h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: calc(30px + 20 * ((100vw - 320px) / 950));
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.header__intro-block span {
+  color: #FF2E63;
+}
+
+.header__intro-block .header__intro-btn {
+  font-size: calc(12px + 4 * ((100vw - 320px) / 950));
+  display: inline-block;
+  margin: 50px 0 0 0;
+  padding: 8px 20px 10px 21px;
+  font-weight: 600;
+  color: #faf9f9;
+  border-radius: 5px;
+  background: #346CD9;
+}
+
+.header__intro-block .bg-circle {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: -o-linear-gradient(318.53deg, rgba(52, 108, 217, 0) 13.96%, rgba(52, 108, 217, 0.25) 85.97%);
+  background: linear-gradient(131.47deg, rgba(52, 108, 217, 0) 13.96%, rgba(52, 108, 217, 0.25) 85.97%);
+}
+
+.header__intro-block .bg-circle .intro__car {
+  position: absolute;
+  top: 0;
+  right: -20%;
+  margin: 74px 0 0 0;
+}
+
+.header .text {
+  padding: 121px 0 0 0;
+}
+
+.header .car {
+  padding: 26px 0 0 0;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .nav__links {
+  font-size: calc(10px + 4 * ((100vw - 320px) / 950));
+  padding: 0 30px 0 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.header .nav__links:hover {
+  color: #FF2E63;
+}
+
+.header .authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .authorization .login {
+  font-size: calc(13px + 3 * ((100vw - 320px) / 950));
+  margin: 0 30px 0 0;
+  font-weight: 600;
+  color: #FF2E63;
+}
+
+.header .authorization .register {
+  font-size: calc(13px + 3 * ((100vw - 320px) / 950));
+  font-weight: 600;
+  padding: 8px 23px 10px 23px;
+  color: #faf9f9;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #FF2E63;
 }
