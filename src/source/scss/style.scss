@@ -6,6 +6,7 @@
 /* -------------------------------------------------------------------- */
 /* 1. Header */
 /* 2. Latest Competitions */
+/* 3. How it works */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -516,7 +517,7 @@ body {
 
             p {
                 @include adaptive-font(14, 10);
-                line-height: 19,07px;
+                line-height: 19px;
                 color: #343434;
                 padding: 0 0 0 20px;
             }
@@ -573,7 +574,6 @@ body {
             .wrapper__inner {
                 display: flex;
                 flex-direction: column;
-                
             }
 
             .last-child {
@@ -587,7 +587,7 @@ body {
     
         &__area {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
     
             &-item {
                 margin: 0;
@@ -596,6 +596,10 @@ body {
             &-remainder {
                 display: flex;
                 align-items: center;
+            }
+
+            .first__inner {
+                margin: 0 30px 0 0;
             }
         }
     }
@@ -636,6 +640,134 @@ body {
             &-remainder {
                 display: flex;
                 align-items: center;
+            }
+
+            .first__inner {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* 3. How it works */
+
+.info__block-title {
+    font-family: 'Rajdhani', sans-serif;
+    @include adaptive-font(36, 29);
+    margin: 0 0 60px 0;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+}
+
+.info {
+
+    &__block {
+        padding: 0 0 100px 0;
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__inner__block {
+        max-width: 250px;
+        max-height: 182px;
+    }
+
+    &__img {
+        text-align: center;
+    }
+
+    &__text {
+        @include adaptive-font(16, 13);
+        margin: 30px 0 0 0;
+        text-align: center;
+        color: #343434;
+        line-height: 22px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__arrow {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .info {
+    
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    
+    .info {
+        
+        &__block {
+
+            .container {
+                display: block;
+                padding: 0 20px;
+
+                .none {
+                    display: none;
+                }
+            }
+        }
+
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 579px) {
+    
+    .info {
+
+        &__inner__block {
+            margin: 0 auto;
+        }
+        
+        &__block {
+
+            .container {
+                display: block;
+                padding: 0 20px;
+
+                .none {
+                    display: block;
+                }
+            }
+        }
+
+        &__wrapper {
+            display: block;
+        }
+
+        &__arrow {
+            transform: rotate(90deg);
+            margin: 30px 0 30px 0;
+            padding: 0;
+            text-align: center;
+
+            img {
+                margin: 0 auto;
             }
         }
     }
