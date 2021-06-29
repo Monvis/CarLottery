@@ -117,7 +117,6 @@ body {
 
 .header {
   width: 100%;
-  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -422,7 +421,14 @@ body {
 /* 2. Latest Competitions */
 
 .lottery__block {
+  margin: 76px 0 0 0;
   padding: 0 0 100px 0;
+}
+
+.lottery__block .wrapper__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .lottery__block h2 {
@@ -446,6 +452,7 @@ body {
 }
 
 .lottery__area-item {
+  margin: 0 30px 0 0;
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 4px 0px #00000040;
           box-shadow: 0px 4px 4px 0px #00000040;
@@ -544,6 +551,47 @@ body {
   }
 }
 
+@media (max-width: 1170px) {
+  .lottery__block .wrapper__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .lottery__block .last-child {
+    margin-top: 30px;
+  }
+
+  .lottery__block h2 {
+    text-align: center;
+  }
+
+  .lottery__area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .lottery__area-item {
+    margin: 0;
+  }
+
+  .lottery__area-remainder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .header .nav__links {
     display: none;
@@ -600,6 +648,53 @@ body {
   }
 }
 
+@media (max-width: 630px) {
+  .lottery__block .wrapper__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .lottery__block .last-child {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .lottery__block h2 {
+    text-align: center;
+  }
+
+  .lottery__area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .lottery__area-item {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+
+  .lottery__area-remainder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 575px) {
   .header__intro-block h1 {
     line-height: 50px;
@@ -631,5 +726,11 @@ body {
   .header__intro-block .bg-circle .intro__car img {
     width: 522px;
     height: 208px;
+  }
+}
+
+@media (max-height: 768px) {
+  .header {
+    height: 100vh;
   }
 }
