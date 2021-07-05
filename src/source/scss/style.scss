@@ -7,6 +7,7 @@
 /* 1. Header */
 /* 2. Latest Competitions */
 /* 3. How it works */
+/* 4. Swiper */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -474,6 +475,10 @@ body {
         margin: 76px 0 0 0;
         padding: 0 0 100px 0;
 
+        .container {
+            padding: 0;
+        }
+
         .wrapper__inner {
             display: flex;
         }
@@ -768,6 +773,120 @@ body {
 
             img {
                 margin: 0 auto;
+            }
+        }
+    }
+}
+
+/* 4. Swiper */
+
+.swiper {
+    background: #346CD91F;
+
+    .container {
+        max-width: 1366px;
+        padding: 0;
+        display: flex;
+    }
+
+    &-container {
+        width: 100%;
+        max-width: 683px;
+        height: 300px;
+        max-height: 400px;
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+
+        .swiper-slide {
+            position: relative;
+
+            &-content {
+                width: 70%;
+                max-width: 400px;
+                margin: 0 auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h3 {
+                    @include adaptive-font(20, 13);
+                    font-weight: 600;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+                
+                p {
+                    @include adaptive-font(16, 9);
+                    padding: 8% 0 0 0;
+                    line-height: 30px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .swiper-pagination-bullet {
+            background: #FF2E6354;
+
+            &-active {
+                background: #FF2E63;
+            }
+        }
+    }
+
+    &-block {
+        order: 1;
+        width: 50%;
+    }
+
+    &-img {
+        order: 2;
+        width: 50%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+    .swiper {
+
+        .container {
+            display: block;
+        }
+
+        &-container {
+            transform: none;
+
+            .swiper-slide {
+                margin: 75px 0 0 0;
+
+                &-content {
+                    position: static;
+                    transform: none;
+                }
+            }
+        }
+
+        &-block {
+            width: 100%;
+        }
+    
+        &-img {
+            width: 100%;
+            height: auto;
+    
+            img {
+                width: 100%;
+                height: auto;
             }
         }
     }

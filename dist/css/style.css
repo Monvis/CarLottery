@@ -98,6 +98,8 @@ h6 {
 
 /* 3. How it works */
 
+/* 4. Swiper */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -427,6 +429,10 @@ body {
   padding: 0 0 100px 0;
 }
 
+.lottery__block .container {
+  padding: 0;
+}
+
 .lottery__block .wrapper__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +599,92 @@ body {
   padding: 20px 0 0 0;
 }
 
+/* 4. Swiper */
+
+.swiper {
+  background: #346CD91F;
+}
+
+.swiper .container {
+  max-width: 1366px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 683px;
+  height: 300px;
+  max-height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.swiper-container .swiper-slide {
+  position: relative;
+}
+
+.swiper-container .swiper-slide-content {
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.swiper-container .swiper-slide-content h3 {
+  font-size: calc(13px + 7 * ((100vw - 320px) / 950));
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.swiper-container .swiper-slide-content p {
+  font-size: calc(9px + 7 * ((100vw - 320px) / 950));
+  padding: 8% 0 0 0;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.swiper-container .swiper-pagination-bullet {
+  background: #FF2E6354;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background: #FF2E63;
+}
+
+.swiper-block {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 50%;
+}
+
+.swiper-img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 50%;
+  height: auto;
+}
+
+.swiper-img img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 1280px) {
   .info__text {
     font-size: 16px;
@@ -712,6 +804,43 @@ body {
   .header__intro-block .intro__car img {
     width: 660px;
     height: 264px;
+  }
+}
+
+@media (max-width: 960px) {
+  .swiper .container {
+    display: block;
+  }
+
+  .swiper-container {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .swiper-container .swiper-slide {
+    margin: 75px 0 0 0;
+  }
+
+  .swiper-container .swiper-slide-content {
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .swiper-block {
+    width: 100%;
+  }
+
+  .swiper-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-img img {
+    width: 100%;
+    height: auto;
   }
 }
 
