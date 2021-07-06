@@ -15,11 +15,20 @@ const swiper = new Swiper('.swiper-container', {
     },
 });
 
-/// Learning
+//anchors
 
-firstFor: for (let num = 0; num < 2; num++) {
-    for (let size = 0; size < 3; size++) {
-        if (size == 1) break firstFor;
-        console.log(size);
+let anchors = document.querySelectorAll('nav a[href*="#"]');
+
+for (anchor of anchors) {
+    if (anchor) {
+        anchor.addEventListener('click', function(e){
+            e.preventDefault();
+            anchorID = this.getAttribute('href');
+            console.log(anchorID);
+            document.querySelector(anchorID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
     }
 }
