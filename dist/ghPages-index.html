@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Car Lottery</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<div class="header__logo">
+					<h2>LOGO<span>AUTO</span></h2>
+				</div>
+				<nav class="nav">
+					<a href="#latest__competitions" class="nav__links">Latest Competitions</a>
+					<a href="#entry__list" class="nav__links">Entry Lists</a>
+					<a href="#" class="nav__links">Live Draws</a>
+					<a href="#winners" class="nav__links">Winners</a>
+					<a href="#" class="nav__links">Gift Cards</a>
+					<a href="#how__it__works" class="nav__links">How it Works</a>
+				</nav>
+				<div class="burger">
+					<a class="burger__btn" href="#">
+						<span class="burger__icon"></span>
+					</a>
+					<div class="burger__window">
+						<div class="burger__window__wrapper">
+							<nav class="authorization">
+								<a href="login.html"><h3 class="login">Login</h3></a>
+								<a href="register.html"><h3 class="register">Register</h3></a>
+							</nav>
+							<div class="strip"></div>
+							<nav class="burger__nav">
+								<a href="#latest__competitions" class="burger__links">Latest Competitions</a>
+								<a href="#entry__list" class="burger__links">Entry Lists</a>
+								<a href="#" class="burger__links">Live Draws</a>
+								<a href="#winners" class="burger__links">Winners</a>
+								<a href="#" class="burger__links">Gift Cards</a>
+								<a href="#how__it__works" class="burger__links">How it Works</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<nav class="authorization in__burger">
+					<a href="login.html"><h3 class="login">Login</h3></a>
+					<a href="register.html"><h3 class="register">Register</h3></a>
+				</nav>
+			</div> <!-- /.header__top -->
+
+			<div class="header__intro">
+				<div class="header__intro-block text">
+					<h1>Could you be our<br><span>next winner?</span></h1>
+					<a class="header__intro-btn" href="#">Enter now</a>
+				</div>
+				<div class="header__intro-block car">
+					<div class="bg-circle">
+						<div class="intro__car">
+							<img src="img/header-car.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</header>
+
+	<!-- Latest Competitions -->
+	<main class="main">
+		<div class="lottery__block" id="latest__competitions">
+			<div class="container">
+				<h2>Latest Competitions</h2>
+				<div class="lottery__area">
+					<div class="wrapper__inner first__inner">
+						<div class="lottery__area-item">
+							<div class="lottery__area-pict">
+								<img src="img/lottery__car-1.png" alt="">
+							</div>
+							<div class="lottery__area-info">
+								<div class="lottery__area-price">
+									<h3>2020 Audi S5 Coupe</h3>
+									<div class="lottery__tickets-price">
+										<div class="actual__price">
+											<span>$19.99</span>
+										</div>
+										<div class="outdated__price">
+											<span><s>$54.68</s></span>
+										</div>
+									</div>
+								</div>
+								<div class="lottery__area-remainder">
+									<p>5878 tickets remaining</p>
+									<div class="wrapper">
+										<div class="button">
+											<img src="img/arrow.svg" width="22px" height="15px" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lottery__area-item last-child">
+							<div class="lottery__area-pict">
+								<img src="img/lottery__car-2.png" alt="">
+							</div>
+							<div class="lottery__area-info">
+								<div class="lottery__area-price">
+									<h3>2016 Ford Mustang GT</h3>
+									<div class="lottery__tickets-price">
+										<div class="actual__price">
+											<span>$7.99</span>
+										</div>
+										<div class="outdated__price">
+											<span><s>$9.68</s></span>
+										</div>
+									</div>
+								</div>
+								<div class="lottery__area-remainder">
+									<p>3290 tickets remaining</p>
+									<div class="wrapper">
+										<div class="button">
+											<img src="img/arrow.svg" width="22px" height="15px" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.wrapper__inner -->
+
+					<div class="wrapper__inner">
+						<div class="lottery__area-item">
+							<div class="lottery__area-pict">
+								<img src="img/lottery__car-3.png" alt="">
+							</div>
+							<div class="lottery__area-info">
+								<div class="lottery__area-price">
+									<h3>2020 Bugatti Chiron</h3>
+									<div class="lottery__tickets-price">
+										<div class="actual__price">
+											<span>$0.99</span>
+										</div>
+										<div class="outdated__price">
+											<span><s>$1.39</s></span>
+										</div>
+									</div>
+								</div>
+								<div class="lottery__area-remainder">
+									<p>4014 tickets remaining</p>
+									<div class="wrapper">
+										<div class="button">
+											<img src="img/arrow.svg" width="22px" height="15px" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lottery__area-item last-child">
+							<div class="lottery__area-pict">
+								<img src="img/lottery__car-4.png" alt="">
+							</div>
+							<div class="lottery__area-info">
+								<div class="lottery__area-price">
+									<h3>2019 Porsche 911 Carrera</h3>
+									<div class="lottery__tickets-price">
+										<div class="actual__price">
+											<span>$1.99</span>
+										</div>
+										<div class="outdated__price">
+											<span><s>$2.99</s></span>
+										</div>
+									</div>
+								</div>
+								<div class="lottery__area-remainder">
+									<p>484 tickets remaining</p>
+									<div class="wrapper">
+										<div class="button">
+											<img src="img/arrow.svg" width="22px" height="15px" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.wrapper__inner -->
+				</div>
+			</div>
+		</div>
+
+		<!-- How it works -->
+		<div class="info__block-title" id=how__it__works>
+			<h2>How it works</h2>
+		</div>
+		<div class="info__block">
+			<div class="container">
+				<div class="info__wrapper">
+					<div class="info__inner__block">
+						<div class="info__img">
+							<img src="img/info__block-1.png" alt="">
+						</div>
+						<div class="info__text">
+							<p>Choose a competition and how many entries you would like</p>
+						</div>
+					</div>
+					<div class="info__arrow"><img src="img/info__arrow.svg" alt=""></div>
+					<div class="info__inner__block">
+						<div class="info__img">
+							<img src="img/info__block-2.png" alt="">
+						</div>
+						<div class="info__text">
+							<p>Answer the qualifying question <span>(be sure to answer correctly!)</span> and complete payment</p>
+						</div>
+					</div>
+				</div>
+				<div class="info__arrow"><img class="none" src="img/info__arrow.svg" alt=""></div>
+				<div class="info__wrapper">
+					<div class="info__inner__block">
+						<div class="info__img">
+							<img src="img/info__block-3.png" alt="">
+						</div>
+						<div class="info__text">
+							<p>Tickets for all correct answers are entered into the draw, streamed LIVE on Facebook using Google’s random number generator</p>
+						</div>
+					</div>
+					<div class="info__arrow"><img src="img/info__arrow.svg" alt=""></div>
+					<div class="info__inner__block">
+						<div class="info__img">
+							<img src="img/info__block-4.png" alt="">
+						</div>
+						<div class="info__text">
+							<p>If you win, we may try to contact you whilst live on Facebook, so be prepared!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Swiper -->
+		<div class="swiper" id="entry__list">
+			<div class="container">
+				<div class="swiper-img">
+					<img src="img/swiper-man.png" alt="">
+				</div>
+				<div class="swiper-block">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+						  	<div class="swiper-slide">
+								<div class="swiper-slide-content">
+									<h3>"Unbelievable this is a dream come true, no way would I ever think I would own a car like this. What great blokes. Thank you very much! 5 star from me!!!"</h3>
+									<p>Danny Churchman</p>
+								</div>
+							</div>
+						  	<div class="swiper-slide">
+								<div class="swiper-slide-content">
+									<h3>"I am shocked, this event became fatal in my life, I just bought a ticket and just won. I have no words to describe it. Thanks to the organizers"</h3>
+									<p>Elizabeth Houston</p>
+								</div>
+							</div>
+						  	<div class="swiper-slide">
+								<div class="swiper-slide-content">
+									<h3>"My father always dreamed of a bugatti. I couldn't watch him save money for her and buy a ticket. I won and gave it to my father, he is happy"</h3>
+									<p>Daniel Logan</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Latest Winners -->
+		<div class="winners" id="winners">
+			<div class="container">
+				<h2>Latest winners</h2>
+				<div class="winners__area">
+					<div class="wrapper__inner first__inner">
+						<div class="winners__area-item">
+							<div class="winners__area-pict">
+								<img src="img/winner1.png" alt="">
+							</div>
+							<div class="winners__area-info">
+								<div class="winners__area-model">
+									<h3>Ferrari 458</h3>
+								</div>
+								<div class="winners__area-data">
+									<p>12 November 2020</p>
+								</div>
+							</div>
+						</div>
+						<div class="winners__area-item last-child">
+							<div class="winners__area-pict">
+								<img src="img/winner2.png" alt="">
+							</div>
+							<div class="winners__area-info">
+								<div class="winners__area-model">
+									<h3>Aquila Gullwing</h3>
+								</div>
+								<div class="winners__area-data">
+									<p>9 November 2020</p>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.wrapper__inner -->
+
+					<div class="wrapper__inner">
+						<div class="winners__area-item">
+							<div class="winners__area-pict">
+								<img src="img/winner3.png" alt="">
+							</div>
+							<div class="winners__area-info">
+								<div class="winners__area-model">
+									<h3>2020 Audi S5 Coupe</h3>
+								</div>
+								<div class="winners__area-data">
+									<p>5 November 2020</p>
+								</div>
+							</div>
+						</div>
+						<div class="winners__area-item last-child">
+							<div class="winners__area-pict">
+								<img src="img/winner4.png" alt="">
+							</div>
+							<div class="winners__area-info">
+								<div class="winners__area-model">
+									<h3>Ferrari Purosangue SUV</h3>
+								</div>
+								<div class="winners__area-data">
+									<p>25 September 2020</p>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.wrapper__inner -->
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo">
+				<h2>LOGOAUTO</h2>
+			</div>
+			<nav class="nav">
+				<div class="nav__column">
+					<a href="#latest__competitions" class="nav__links">Latest Competitions</a>
+					<a href="#entry__list" class="nav__links adapt">Entry Lists</a>
+				</div>
+				<div class="nav__column">
+					<a href="#" class="nav__links">Live Draws</a>
+					<a href="#winners" class="nav__links adapt">Winners</a>
+				</div>
+				<div class="nav__column">
+					<a href="#" class="nav__links">Gift Cards</a>
+					<a href="#how__it__works" class="nav__links last__link">How it Works</a>
+				</div>
+			</nav>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="source/js/script.min.js"></script>
+</body>
+</html>
