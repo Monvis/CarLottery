@@ -102,6 +102,8 @@ h6 {
 
 /* 5. Latest Winners */
 
+/* 6. Footer */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -761,9 +763,74 @@ body {
   color: #343434;
 }
 
+/* 6. Footer */
+
+.footer {
+  background-color: #346CD9;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+.footer__logo {
+  padding: 16px 0;
+}
+
+.footer__logo h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: calc(20px + 10 * ((100vw - 320px) / 950));
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+}
+
+.footer .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .nav__links {
+  font-size: calc(10px + 4 * ((100vw - 320px) / 950));
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 30px 0 0;
+  color: #fff;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.footer .nav__links:hover {
+  color: #FF2E63;
+}
+
+.footer .nav .last__link {
+  padding: 0;
+}
+
 @media (min-width: 1280px) {
   .info__text {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .swiper-container .swiper-slide-content h3 {
+    font-size: 20.70px;
   }
 }
 
@@ -785,6 +852,12 @@ body {
 
   .header__intro .text h1 {
     font-size: 61px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer .container {
+    padding: 0 20px;
   }
 }
 
@@ -984,6 +1057,48 @@ body {
   }
 }
 
+@media (max-width: 870px) {
+  .footer .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 0 10px 0;
+  }
+
+  .footer .nav__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0 10px 0;
+  }
+
+  .footer .nav__column .adapt {
+    padding: 0;
+  }
+
+  .footer .nav__links {
+    font-size: calc(10px + 4 * ((100vw - 320px) / 950));
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 30px 0 0;
+    color: #fff;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+  }
+
+  .footer .nav__links:hover {
+    color: #FF2E63;
+  }
+
+  .footer .nav .last__link {
+    padding: 0;
+  }
+}
+
 @media (max-width: 830px) {
   .header__intro {
     display: block;
@@ -991,6 +1106,46 @@ body {
 
   .header__intro-block .bg-circle {
     margin-left: auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .footer .nav {
+    display: block;
+    padding: 15px 0 10px 0;
+  }
+
+  .footer .nav__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0 10px 0;
+  }
+
+  .footer .nav__column .adapt {
+    padding: 0;
+  }
+
+  .footer .nav__links {
+    font-size: calc(10px + 4 * ((100vw - 320px) / 950));
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 30px 0 0;
+    color: #fff;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+  }
+
+  .footer .nav__links:hover {
+    color: #FF2E63;
+  }
+
+  .footer .nav .last__link {
+    padding: 0;
   }
 }
 
@@ -1182,6 +1337,50 @@ body {
 
   .swiper-container .swiper-slide-content h3 {
     font-size: 15.52px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 390px) {
+  .footer .container {
+    display: block;
+  }
+
+  .footer .nav {
+    display: block;
+    padding: 15px 0 10px 0;
+  }
+
+  .footer .nav__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 0 10px 0;
+  }
+
+  .footer .nav__column .adapt {
+    padding: 0;
+  }
+
+  .footer .nav__links {
+    font-size: calc(10px + 4 * ((100vw - 320px) / 950));
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 30px 0 0;
+    color: #fff;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+  }
+
+  .footer .nav__links:hover {
+    color: #FF2E63;
+  }
+
+  .footer .nav .last__link {
+    padding: 0;
   }
 }
 

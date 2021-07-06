@@ -9,6 +9,7 @@
 /* 3. How it works */
 /* 4. Swiper */
 /* 5. Latest Winners */
+/* 6. Footer */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -861,6 +862,22 @@ body {
     }
 }
 
+@media (min-width: 1366px) {
+
+    .swiper {
+        &-container {
+            .swiper-slide {
+                &-content {
+
+                    h3 {
+                        font-size: 20.70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 960px) and (max-width: 1150px) {
     .swiper {
     
@@ -1073,4 +1090,179 @@ body {
             }
         }
     }
-}  
+}
+
+/* 6. Footer */
+
+.footer {
+    background-color: #346CD9;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    &__logo {
+        padding: 16px 0;
+
+        h2 {
+            font-family: 'Rajdhani', sans-serif;
+            @include adaptive-font(30, 20);
+            font-weight: 700;
+            color: #FFFFFF;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+        &__links {
+            @include adaptive-font(14, 10);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 0 30px 0 0;
+            color: #fff;
+            transition: .4s;
+    
+            &:hover {
+                color: #FF2E63;
+            }
+        }  
+
+        .last__link {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    .footer {
+    
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    
+    .footer {
+    
+        .nav {
+            display: flex;
+            padding: 15px 0 10px 0;
+
+            &__column {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 0 10px 0;
+
+                .adapt {
+                    padding: 0;
+                }
+            }
+    
+            &__links {
+                @include adaptive-font(14, 10);
+                font-weight: bold;
+                text-decoration: none;
+                padding: 0 30px 0 0;
+                color: #fff;
+                transition: .4s;
+        
+                &:hover {
+                    color: #FF2E63;
+                }
+            }  
+    
+            .last__link {
+                padding: 0;
+            }
+        } 
+    }
+}
+
+@media (max-width: 730px) {
+    
+    .footer {
+    
+        .nav {
+            display: block;
+            padding: 15px 0 10px 0;
+
+            &__column {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 0 10px 0;
+
+                .adapt {
+                    padding: 0;
+                }
+            }
+    
+            &__links {
+                @include adaptive-font(14, 10);
+                font-weight: bold;
+                text-decoration: none;
+                padding: 0 30px 0 0;
+                color: #fff;
+                transition: .4s;
+        
+                &:hover {
+                    color: #FF2E63;
+                }
+            }  
+    
+            .last__link {
+                padding: 0;
+            }
+        } 
+    }
+}
+
+@media (min-width: 320px) and (max-width: 390px) {
+    
+    .footer {
+
+        .container {
+            display: block;
+        }
+    
+        .nav {
+            display: block;
+            padding: 15px 0 10px 0;
+
+            &__column {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 0 10px 0;
+
+                .adapt {
+                    padding: 0;
+                }
+            }
+    
+            &__links {
+                @include adaptive-font(14, 10);
+                font-weight: bold;
+                text-decoration: none;
+                padding: 0 30px 0 0;
+                color: #fff;
+                transition: .4s;
+        
+                &:hover {
+                    color: #FF2E63;
+                }
+            }  
+    
+            .last__link {
+                padding: 0;
+            }
+        } 
+    }
+}
