@@ -8,6 +8,7 @@
 /* 2. Latest Competitions */
 /* 3. How it works */
 /* 4. Swiper */
+/* 5. Latest Winners */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -781,6 +782,7 @@ body {
 /* 4. Swiper */
 
 .swiper {
+    margin: 0 0 100px 0;
     background: #346CD91F;
 
     .container {
@@ -937,3 +939,138 @@ body {
         }
     }
 }
+
+/* 5. Latest Winners */
+
+.winners {
+    padding: 0 0 100px 0;
+
+    .container {
+        padding: 0;
+    }
+
+    .wrapper__inner {
+        display: flex;
+    }
+
+    h2 {
+        font-family: 'Rajdhani', sans-serif;
+        @include adaptive-font(36, 29);
+        font-weight: 700;
+        color: #343434;
+        line-height: 46px;
+        text-align: left;
+        margin: 0 0 40px 0;
+    }
+
+    &__area {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            margin: 0 30px 0 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px 0px #00000040;
+        }
+
+        &-info {
+            padding: 20px 0 20px 20px;
+
+            h3 {
+                font-family: 'Rajdhani', sans-serif;
+                @include adaptive-font(20, 16);
+                font-weight: 700;
+                line-height: 26px;
+                padding: 0 0 7px 0;
+            }
+        }
+
+        &-data {
+            display: flex;
+            align-items: center;
+
+            p {
+                @include adaptive-font(14, 10);
+                line-height: 19px;
+                color: #343434;
+            }
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+
+    .winners {
+
+        .wrapper__inner {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .last-child {
+            margin-top: 30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    
+        &__area {
+            display: flex;
+            justify-content: center;
+    
+            &-item {
+                margin: 0;
+            }
+
+            &-data {
+                display: flex;
+                align-items: center;
+            }
+
+            .first__inner {
+                margin: 0 30px 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+
+    .winners {
+
+        .wrapper__inner {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .last-child {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    
+        &__area {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+    
+            &-item {
+                max-width: 590px;
+                margin: 0 auto;
+            }
+
+            &-data {
+                display: flex;
+                align-items: center;
+            }
+
+            .first__inner {
+                margin: 0;
+            }
+        }
+    }
+}  
