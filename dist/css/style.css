@@ -635,11 +635,11 @@ body {
   max-width: 400px;
   margin: 0 auto;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -35%);
+      -ms-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
 }
 
 .swiper-container .swiper-slide-content h3 {
@@ -655,6 +655,10 @@ body {
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.swiper-container .swiper-pagination {
+  margin-bottom: 3%;
 }
 
 .swiper-container .swiper-pagination-bullet {
@@ -829,6 +833,14 @@ body {
             transform: none;
   }
 
+  .swiper-container .swiper-slide-content p {
+    padding: 5% 0 0 0;
+  }
+
+  .swiper-container .swiper-pagination {
+    margin-bottom: 8%;
+  }
+
   .swiper-block {
     width: 100%;
   }
@@ -980,6 +992,31 @@ body {
   .header__intro-block .bg-circle .intro__car img {
     width: 522px;
     height: 208px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1150px) {
+  .swiper-container .swiper-pagination {
+    margin-bottom: 6%;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 960px) {
+  .swiper-container {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .swiper-container .swiper-slide-content {
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+
+  .swiper-container .swiper-slide-content h3 {
+    font-size: 15.52px;
   }
 }
 
