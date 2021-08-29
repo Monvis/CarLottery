@@ -857,12 +857,22 @@ body {
         order: 2;
         width: 50%;
         height: auto;
+        position: relative;
+        z-index: 2;
 
         img {
             width: 100%;
             height: auto;
         }
     }
+}
+
+.swiper-slide {
+    opacity: 0;
+}
+
+.swiper-slide-active {
+    opacity: 1;
 }
 
 @media (min-width: 1366px) {
