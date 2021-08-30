@@ -4,17 +4,6 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('burger__active');
 });
 
-//swiperJs
-const swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
-    loop: true,
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
-
 //anchors
 
 let anchors = document.querySelectorAll('nav a[href*="#"]');
@@ -33,5 +22,13 @@ for (anchor of anchors) {
     }
 }
 
-// Learning 
+//swiperJs
+const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
 
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});

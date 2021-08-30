@@ -8,6 +8,7 @@ let path = {
         js: project_folder + "/source/js/",
         fonts: project_folder + "/fonts/",
         img: project_folder + "/img/",
+        libs: project_folder + "/libs/",
     },
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -15,12 +16,14 @@ let path = {
         js: source_folder + "/source/js/script.js",
         fonts: source_folder + "/fonts/*.ttf",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        libs: source_folder + "/libs/**/*.{css,scss,gif,rb,js,eot,svg,ttf,woff}",
     },
     watch: {
         html: source_folder + "/**/*.html",
         css: source_folder + "/source/scss/**/*.scss",
         js: source_folder + "/source/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}",
+        libs: source_folder + "/libs/**/*.{css, scss, gif, rb, js, eot, svg, ttf, woff}",
     },
     clean: "./" + project_folder + "/"
 }
@@ -53,6 +56,12 @@ function html(params) {
     return src(path.src.html)
     .pipe(fileinclude())
     .pipe(dest(path.build.html))
+    .pipe(browsersync.stream())
+}
+
+function libs(params) {
+    return src(path.src.libs)
+    .pipe(dest(path.build.libs))
     .pipe(browsersync.stream())
 }
 
@@ -93,7 +102,7 @@ function css(params) {
         group_media()
     )
     .pipe(
-        autoprefixer({grid: true, overrideBrowserslist: ['last 5 versions'], cascade: true})
+        autoprefixer({overrideBrowserslist: ['last 5 versions'], cascade: true})
     )
     .pipe(dest(path.build.css))
     .pipe(
@@ -117,10 +126,11 @@ function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, libs));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-exports.images = images; 
+exports.images = images;
+exports.libs = libs;
 exports.js = js;
 exports.css = css;
 exports.html = html;

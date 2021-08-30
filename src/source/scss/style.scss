@@ -7,7 +7,7 @@
 /* 1. Header */
 /* 2. Latest Competitions */
 /* 3. How it works */
-/* 4. Swiper */
+/* 4. Slick slider */
 /* 5. Latest Winners */
 /* 6. Footer */
 
@@ -783,11 +783,9 @@ body {
     }
 }
 
-/* 4. Swiper */
+/* 4. Slick slider */
 
 .swiper {
-    margin: 0 0 100px 0;
-    background: #346CD91F;
 
     .container {
         max-width: 1366px;
@@ -846,23 +844,16 @@ body {
                 background: #FF2E63;
             }
         }
-    }
 
-    &-block {
-        order: 1;
-        width: 50%;
-    }
+        &-block {
+            order: 1;
+        }
 
-    &-img {
-        order: 2;
-        width: 50%;
-        height: auto;
-        position: relative;
-        z-index: 2;
-
-        img {
-            width: 100%;
+        &-img {
+            order: 2;
             height: auto;
+            position: relative;
+            z-index: 2;
         }
     }
 }
@@ -881,7 +872,6 @@ body {
         &-container {
             .swiper-slide {
                 &-content {
-
                     h3 {
                         font-size: 20.70px;
                     }
@@ -951,16 +941,12 @@ body {
 @media (min-width: 630px) and (max-width: 960px) {
     
     .swiper {
-
         &-container {
             transform: none;
-
             .swiper-slide {
-
                 &-content {
                     position: static;
                     transform: none;
-
                     h3 {
                         font-size: 15.52px;
                     }

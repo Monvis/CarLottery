@@ -98,7 +98,7 @@ h6 {
 
 /* 3. How it works */
 
-/* 4. Swiper */
+/* 4. Slick slider */
 
 /* 5. Latest Winners */
 
@@ -607,12 +607,7 @@ body {
   padding: 20px 0 0 0;
 }
 
-/* 4. Swiper */
-
-.swiper {
-  margin: 0 0 100px 0;
-  background: #346CD91F;
-}
+/* 4. Slick slider */
 
 .swiper .container {
   max-width: 1366px;
@@ -678,26 +673,19 @@ body {
   background: #FF2E63;
 }
 
-.swiper-block {
+.swiper-container-block {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  width: 50%;
 }
 
-.swiper-img {
+.swiper-container-img {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  width: 50%;
   height: auto;
   position: relative;
   z-index: 2;
-}
-
-.swiper-img img {
-  width: 100%;
-  height: auto;
 }
 
 .swiper-slide {
